@@ -1,0 +1,30 @@
+.searchSection{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width: 400px;
+    height: 100px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #F9F0DA;
+    color: #F9F0DA;
+
+    font-size: 50px;
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover{
+    border: 3px solid #F9F0DA;
+    background-color: rgba(249, 240, 218, 1);
+    color: #F15B42;
+
+    transition: all 0.5s ease 0s;
+}

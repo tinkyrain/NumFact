@@ -1,0 +1,14 @@
+.info{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.info__text{
+    color: #F9F0DA;
+    font-size: 35px;
+    padding-right: 50px;
+}

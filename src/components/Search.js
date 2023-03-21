@@ -1,7 +1,10 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import './Search.css'
 
 const Search = () => {
+
+    const dispatch = useDispatch();
 
     const URL = 'http://numbersapi.com/';
 
@@ -9,8 +12,8 @@ const Search = () => {
         fetch(`${URL}${getRandomInt(100)}`)
         .then(response => response.text())
         .then(data => {
-            console.log(data);
-        })
+            dispatch({type: 'ADD_TEXT', textChange: data});
+        });
     }
 
     const getRandomInt = (max) => {

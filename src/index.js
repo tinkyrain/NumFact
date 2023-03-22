@@ -10,7 +10,7 @@ import './index.css';
 import './media.css';
 
 const defaultState = {
-  text: 'There will be a fact!',
+  text: '',
 }
 
 const reducer = (state = defaultState, action) => {

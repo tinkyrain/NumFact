@@ -20,6 +20,8 @@ const Search = () => {
         return Math.floor(Math.random() * max);
     }
 
+    getInfo();
+
     return(
         <section className='searchSection'>
             <button className="btn" onClick={() => getInfo()}>Numerical Fact</button>

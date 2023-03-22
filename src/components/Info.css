@@ -10,5 +10,7 @@
 .info__text{
     color: #F9F0DA;
     font-size: 35px;
-    padding: 0 50px;
+    margin: 0 50px;
+
+    text-align: center;
 }

@@ -24,7 +24,10 @@ const Search = () => {
 
     return(
         <section className='searchSection'>
-            <button className="btn" onClick={() => getInfo()}>Numerical Fact</button>
+            <div className='searhSection_btnDiv'>
+                <button className="btn" onClick={() => getInfo()}>Numerical Fact</button>
+                <a className='CopyLink'>Copy Fact!</a>
+            </div>
         </section>
     );
 }

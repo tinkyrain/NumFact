@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.searhSection_btnDiv{
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+
+    flex-direction: column;
+}
+
 .btn{
     width: 400px;
     height: 100px;
@@ -19,12 +27,28 @@
 
     cursor: pointer;
     transition: all 0.5s ease 0s;
+
+    margin: 0 auto;
 }
 
 .btn:hover{
     border: 3px solid #F9F0DA;
     background-color: rgba(249, 240, 218, 1);
     color: #F15B42;
+
+    transition: all 0.5s ease 0s;
+}
+
+.CopyLink{
+    font-size: 25px;
+    color: #F9F0DA;
+    font-weight: bold;
+
+    text-decoration: underline;
+
+    padding-top: 20px;
+
+    cursor: pointer;
 
     transition: all 0.5s ease 0s;
 }

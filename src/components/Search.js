@@ -1,17 +1,15 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import './Search.css';
-import store from '../index'
 
 const Search = () => {
-
     const dispatch = useDispatch();
     let text  = null;
 
-    const URL = 'http://numbersapi.com/';
+    const URL = 'http://numbersapi.com/random?min=1&max=500';
 
     const getInfo = () => {
-        fetch(`${URL}${getRandomInt(100)}`)
+        fetch(`${URL}`)
         .then(response => response.text())
         .then(data => {
             dispatch({type: 'ADD_TEXT', textChange: data});
@@ -19,11 +17,8 @@ const Search = () => {
         });
     }
 
-    const getRandomInt = (max) => {
-        return Math.floor(Math.random() * max);
-    }
-
     const copyFact = () => {
+        alert('You copied this fact!');
         return navigator.clipboard.writeText(text);
     }
 
